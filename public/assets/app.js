@@ -40,8 +40,8 @@ for(let i = 0 ; i < target.length ; i++){
                 oneFly = [];
                 console.log(oneFly);
 
-                // todo for last shoot display last fly
-                // todo if user validate load array
+                // todo for last shoot display last fly and final score
+                // todo if user validate final score
 
                 break;
         }
@@ -49,3 +49,5 @@ for(let i = 0 ; i < target.length ; i++){
 }
 
 // todo operate eleven to ten plus
+// work with dataset to give display style
+

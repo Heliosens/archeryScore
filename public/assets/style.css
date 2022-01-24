@@ -23,13 +23,13 @@ main {
 }
 
 section {
-    font-size: 200%;
+    font-size: 7vw;
     color: white;
 }
 
-  /**************/
- /**  color   **/
-/**************/
+  /*****************/
+ /**  targetBox  **/
+/*****************/
 
 .yellow {
     background: yellow;
@@ -73,25 +73,6 @@ section {
 
 form {
     background: rgba(0, 0, 0, 0.7);
-}
-
-  /******************/
- /**  background  **/
-/******************/
-
-.background {
-    position: fixed;
-    width: 100%;
-    z-index: -99;
-}
-
-.background div {
-    height: 20rem;
-    border-bottom: black 1px solid;
-}
-
-#halfYellow {
-    height: 10rem;
 }
 
 a {
