@@ -2,6 +2,13 @@
 let main = document.querySelector('main');
 main.style.height = innerHeight + "px";
 
+// modal window
+let firstScreen = new ModalWindow(main, "#ffffff80", "50%", "50%", "white", "1px black solid");
+firstScreen.screen();
+firstScreen.box("Nombre de volèes", "10 ou 20");
+firstScreen.closeBtn('valider');
+
+
 // get target
 let targetBox = document.querySelector('.target');
 let target = targetBox.getElementsByTagName('div');

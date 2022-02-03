@@ -12,19 +12,45 @@ html {
 
 body {
     width: 100%;
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Verdana', sans-serif;
     text-align: center;
+}
+
+main, section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
     background-image: url("img/archery_target.png");
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 10vw;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lucida Handwriting', sans-serif;
+    font-size: 10vw;
 }
 
 section {
-    font-size: 7vw;
+    background-color: #00000080;
     color: white;
+    width: 80%;
+    padding: 5vh 1vw;
+    border-radius: .9em;
+}
+
+span {
+    color: black;
+    background-color: white;
+    padding: 1vw;
+    margin: .5vw;
+    border-radius: .4em;
+    border: 5px solid blue;
 }
 
   /*****************/
@@ -87,10 +113,10 @@ header {
     margin: 0 3rem;
     padding: 3rem 0;
     font-weight: bold;
-    font-size: 2.5rem;
-    color: white;
-    text-shadow: black 0 0 1rem;
-    font-family: 'El Messiri', sans-serif;
+    font-size: 3vw;
+    /*color: white;*/
+    /*text-shadow: black 0 0 1rem;*/
+    /*font-family: 'Lucida Handwriting', sans-serif;*/
 }
 
 #home a, form, #hello a {

@@ -8,4 +8,3 @@
     <script src="https://kit.fontawesome.com/b3c591f1b4.js" crossorigin="anonymous"></script>
 </head>
 <main>
-<?php
