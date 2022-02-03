@@ -2,12 +2,22 @@
 let main = document.querySelector('main');
 main.style.height = innerHeight + "px";
 
-// modal window
-let firstScreen = new ModalWindow(main, "#ffffff80", "50%", "50%", "white", "1px black solid");
-firstScreen.screen();
-firstScreen.box("Nombre de volèes", "10 ou 20");
-firstScreen.closeBtn('valider');
+let firstS = document.getElementById("firstS");
 
+
+// modal window
+let firstScreen = new ModalWindow(firstS, "", "50%", "50%", "#ffffffd0", "1px black solid");
+firstScreen.screen();
+firstScreen.box("Nombre de volèes", "");
+firstScreen.selectionBox("5vw");
+firstScreen.optionData("...", "10", "20");
+firstScreen.closeBtn('<a href="/?title=targetFrame">Au pas de tir !</a>');
+
+// let link = document.getElementById("theBox").querySelector('a');
+// link.style.color = "red";
+// link.addEventListener('click', function (e){
+//     e.preventDefault();
+// })
 
 // get target
 let targetBox = document.querySelector('.target');

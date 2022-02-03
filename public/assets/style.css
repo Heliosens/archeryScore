@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-main, section {
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,11 +24,14 @@ main, section {
 }
 
 main {
+    font-size: 5vw;
+    text-align: center;
+}
+
+#firstS {
     background-image: url("img/archery_target.png");
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 10vw;
-    text-align: center;
 }
 
 h1 {
@@ -36,21 +39,17 @@ h1 {
     font-size: 10vw;
 }
 
-section {
-    background-color: #00000080;
-    color: white;
-    width: 80%;
-    padding: 5vh 1vw;
-    border-radius: .9em;
+#theBox h1 {
+    font-size: 5vw;
 }
 
-span {
-    color: black;
-    background-color: white;
-    padding: 1vw;
-    margin: .5vw;
-    border-radius: .4em;
-    border: 5px solid blue;
+#theBox a {
+    font-size: 3vw;
+}
+
+section {
+    color: white;
+    border-radius: .9em;
 }
 
   /*****************/
@@ -72,12 +71,10 @@ span {
 
 .blue {
     background: blue;
-    color: white;
 }
 
 .black {
     background: black;
-    color: white;
 }
 
 #black3 {
@@ -138,33 +135,9 @@ header {
     font-size: 2.5rem;
 }
 
-/**  hello  **/
-header span {
-    display: block;
-}
-
-#hello {
-    color: white;
-    text-shadow: black 2px 2px;
-}
-
-/** profile **/
-#profile div {
-    margin: .5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.choice {
-    width: 50%;
-    margin: auto;
-    font-size: 3rem;
-}
-
 /*  target */
 .target {
+    position: relative;
     height: 100%;
     width: 100%;
     display: flex;
@@ -184,8 +157,8 @@ header span {
 #plus {
     position: absolute;
     top: 0;
-    left: 40%;
-    width: 20%;
+    left: 35%;
+    width: 30%;
     height: 5%;
     border-radius: 50% / 0 0 100% 100%;
     border: black 1px dashed;
@@ -196,62 +169,25 @@ header span {
  /**  form  **/
 /************/
 
-form {
-    width: 85%;
-    margin: 2rem auto;
-    padding: .5rem;
-    color: white;
-    border-radius: 15px;
-}
+/*form {*/
+/*    width: 85%;*/
+/*    margin: 2rem auto;*/
+/*    padding: .5rem;*/
+/*    color: white;*/
+/*    border-radius: 15px;*/
+/*}*/
 
-/**  signIn  **/
+/*input, select {*/
+/*    padding: .5rem;*/
+/*    font-size: 2.5rem;*/
+/*    margin: 2rem 0;*/
+/*    width: 80%;*/
+/*}*/
 
-fieldset, #genre {
-    display: flex;
-}
-
-fieldset {
-    margin: .5rem;
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: left;
-}
-
-form fieldset {
-    flex-direction: column;
-}
-
-#genre {
-    justify-content: space-around;
-    width: 100%;
-    text-align: center;
-}
-
-#genre span {
-    border: 1px white solid;
-    border-radius: 10%;
-    margin: 1rem;
-    padding: 1rem;
-    background: black;
-    flex-basis: 33%;
-}
-
-input, select {
-    padding: .5rem;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    width: 80%;
-}
-
-button, footer {
-    font-size: 3rem;
-    border: none;
-}
-
-/**  shooting profil  **/
-#shoot form div {
-    margin: 15px;
-}
+/*button, footer {*/
+/*    font-size: 3rem;*/
+/*    border: none;*/
+/*}*/
 
   /*************/
  /** footer  **/
@@ -267,55 +203,20 @@ a i {
     text-shadow: black 2px 2px;
 }
 
-#minTarget {
-    text-align: center;
-}
+/*#minTarget {*/
+/*    text-align: center;*/
+/*}*/
 
-#minTarget button {
-    padding: 1rem;
-    border-radius: 50%;
-    background: black;
-}
-
-#logIn footer {
-    margin-top: 40px;
-}
+/*#minTarget button {*/
+/*    padding: 1rem;*/
+/*    border-radius: 50%;*/
+/*    background: black;*/
+/*}*/
 
   /***********/
  /** MODAL **/
 /***********/
 
-#homeScreen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal {
-    height: 80%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background: black;
-    border-radius: 15px;
-    margin: 1rem auto;
-    padding: 1rem 1rem;
-    box-shadow: inset white 0 0 1rem;
-}
-
-#result {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .fa-long-arrow-alt-right {
     color: green;
@@ -326,47 +227,47 @@ a i {
  /**  point   **/
 /**************/
 
-#fullScreen {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: none;
-    /*display: flex;*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/*#fullScreen {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: none;*/
+/*    !*display: flex;*!*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
-#result span {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+/*#result span {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*}*/
 
-#final {
-    display: none;
-}
+/*#final {*/
+/*    display: none;*/
+/*}*/
 
-#number span, #result span {
-    border-radius: 1.5rem;
-    background: #00008b80;
-    box-shadow: inset #2196f3 0 0 1rem;
-    display: flex;
-    align-items: center;
-    font-size: 4rem;
-}
+/*#number span, #result span {*/
+/*    border-radius: 1.5rem;*/
+/*    background: #00008b80;*/
+/*    box-shadow: inset #2196f3 0 0 1rem;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    font-size: 4rem;*/
+/*}*/
 
-#result span {
-    justify-content: space-evenly;
-    width: 10rem;
-    height: 10rem;
-}
+/*#result span {*/
+/*    justify-content: space-evenly;*/
+/*    width: 10rem;*/
+/*    height: 10rem;*/
+/*}*/
 
-#number span {
-    width: 60%;
-    flex-basis: 25%;
-    justify-content: center;
-}
+/*#number span {*/
+/*    width: 60%;*/
+/*    flex-basis: 25%;*/
+/*    justify-content: center;*/
+/*}*/
 
 /*@media screen and (max-width: 600px) {*/
 

@@ -46,16 +46,18 @@ function ModalWindow (target, screenColor, w, h, boxColor, border){
         // create modal window
         let theBox = document.createElement('div');
         // style
-        theBox.style.backgroundColor = boxColor;
-        theBox.style.border = border;
-        theBox.style.width = w;
-        theBox.style.height = h;
-        theBox.style.padding = "1vh";
-        theBox.style.fontFamily = "sans-serif";
-        theBox.style.display = "flex";
-        theBox.style.flexDirection = "column";
-        theBox.style.justifyContent = "space-around";
-        theBox.style.alignItems = "center";
+        theBox.style.cssText = `
+            background-color : ` + boxColor + `;
+            border : ` + border + `;
+            width : ` + w + `;
+            height : ` + h + `;
+            padding : 1vh;
+            display : flex;
+            flex-direction : column;
+            justify-content : space-around;
+            align-items : center;
+            border-radius : .5em;
+        `;
 
         // affect id
         theBox.id = "theBox";
@@ -80,6 +82,29 @@ function ModalWindow (target, screenColor, w, h, boxColor, border){
         // append in container
         let container = document.getElementById('container');
         container.appendChild(theBox);
+    }
+
+    // create select
+    this.selectionBox = function (textSize){
+        let div = document.createElement('div');
+        let selectData = document.createElement('select');
+        selectData.style.fontSize = textSize;
+        selectData.id = "selectModalId";
+
+        let innerBox = document.getElementById('innerBox');
+        div.appendChild(selectData);
+        innerBox.appendChild(div);
+    }
+
+    // create option
+    this.optionData = function (...opt){
+        for(let item of opt){
+            let option = document.createElement('option');
+            option.value = item;
+            option.innerHTML = item;
+            let select = document.getElementById("selectModalId");
+            select.appendChild(option);
+        }
     }
 
     /**
@@ -129,7 +154,7 @@ function ModalWindow (target, screenColor, w, h, boxColor, border){
         btn.name = "inputInBox";
 
         // get element to close
-        let container = document.getElementById('container');
+        let container = document.getElementById('container').querySelector('a');
         btn.addEventListener('click', function (){
             container.remove();
         });

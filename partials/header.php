@@ -7,4 +7,3 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/minTarget.png" />
     <script src="https://kit.fontawesome.com/b3c591f1b4.js" crossorigin="anonymous"></script>
 </head>
-<main>
